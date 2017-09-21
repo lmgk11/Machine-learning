@@ -16,8 +16,6 @@ import java.util.Random;
 
 import javax.swing.JFrame;
 
-import Perceptron.Perceptron;
-
 public class Source extends Canvas implements Runnable {
 	point[] points;
 	

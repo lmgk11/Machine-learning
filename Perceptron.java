@@ -1,5 +1,3 @@
-package Perceptron;
-
 import java.util.Random;
 
 public class Perceptron {
