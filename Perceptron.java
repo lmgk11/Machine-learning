@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Perceptron {
 	private float[] m_weights	= new float[3]; 	//two for the inputs and one for the bias
-	private double learningrate	= 0.000001;             //how fast the weights change wich results in how fast it learns and how accurate it can get
+	public double learningrate	= 0.001;             //how fast the weights change wich results in how fast it learns and how accurate it can get
 													//if its lower it will take longer time but it will be more accurate
 	Random rand = new Random();
 	

@@ -17,7 +17,7 @@ import java.util.Random;
 import javax.swing.JFrame;
 
 public class Source extends Canvas implements Runnable {
-	point[] points;
+	static point[] points;
 	
 	int length = points.length;
 	int right  = 0;
@@ -36,12 +36,15 @@ public class Source extends Canvas implements Runnable {
 	private boolean running = false;
 	
 	public static void main(String[] args) {
-		points = new point[Integer.Parse(args[0])];
-		new Source();
+        points = new point[Integer.parseInt(args[0])];
+        ptron.learningrate = Double.parseDouble(args[1]);
+        new Source();
 	}
 	
 	private Source() {
-		JFrame frame = new JFrame("Machine Learning");
+
+        
+        JFrame frame = new JFrame("Machine Learning");
 		frame.setSize(WIDTH, HEIGHT);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
